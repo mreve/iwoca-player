@@ -1,0 +1,24 @@
+.SongListItem-song {
+  align-items: center;
+  background-color: #444666;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  margin: 0 0 24px 0;
+  padding-top: 24px;
+  width: 100%;
+}
+
+.SongListItem-title {
+  display: flex;
+}
+
+.SongListItem-artist {
+  display: flex;
+}
+
+.SongListItem-duration {
+  display: flex;
+}

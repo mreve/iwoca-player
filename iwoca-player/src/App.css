@@ -6,6 +6,14 @@ body {
   text-align: center;
 }
 
+.App-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 180px;
+}
+
 .App-logo {
   margin-top: 10px;
   font-size: 60px;
@@ -13,9 +21,12 @@ body {
 
 .App-header {
   background-color: #222444;
+  color: white;
   height: 150px;
   padding: 20px;
-  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .App-title {

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import PlayerContainer from './PlayerContainer.js';
+
 class App extends Component {
   render() {
     return (
@@ -9,7 +11,9 @@ class App extends Component {
           <div className="App-logo">♬</div>
           <h1 className="App-title">iwoca player</h1>
         </header>
-        <p>Hello, iwoca!</p>
+        <div className="App-container">
+          <PlayerContainer />
+        </div>
       </div>
     );
   }
