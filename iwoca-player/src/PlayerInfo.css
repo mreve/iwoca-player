@@ -1,0 +1,14 @@
+.PlayerInfo-contaier {
+  display: flex;
+  flex-direction: column;
+  height: 92px;
+  width: 80px;
+}
+
+.PlayerInfo-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12px;
+
+}
