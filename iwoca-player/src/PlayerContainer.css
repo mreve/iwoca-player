@@ -1,0 +1,8 @@
+.PlayerContainer-songlist {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 40px;
+  width: 600px;
+}
