@@ -12,6 +12,7 @@ class PlayerContainer extends Component {
           title={song.title}
           artist={song.artist}
           duration={song.duration}
+          key={song.title}
         />
       ),
     );
@@ -32,7 +33,7 @@ class PlayerContainer extends Component {
       {
         title: 'Promise Everything, Deliver Nothing',
         artist: 'Napoleon Bonaparte',
-        duration: 169,
+        duration: 129,
       },
       {
         title: 'Fool!',
@@ -47,7 +48,7 @@ class PlayerContainer extends Component {
       {
         title: 'To Be Or Not To Be',
         artist: 'William Shakespeare',
-        duration: 196,
+        duration: 11196,
       },
     ];
   }
