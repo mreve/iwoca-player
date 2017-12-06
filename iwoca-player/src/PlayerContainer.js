@@ -4,6 +4,15 @@ import SongListItem from './SongListItem.js';
 import './PlayerContainer.css';
 
 class PlayerContainer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedSongKey: null,
+    };
+    this._onSelectSong = this._onSelectSong.bind(this);
+    this._onSongEnded = this._onSongEnded.bind(this);
+  }
+
   render() {
     let songs = this.getSongs()
     songs = songs.map(
@@ -13,6 +22,9 @@ class PlayerContainer extends Component {
           artist={song.artist}
           duration={song.duration}
           key={song.title}
+          isSelected={song.title === this.state.selectedSongKey}
+          onSelectSong={() => this._onSelectSong(song.title)}
+          onSongEnded={this._onSongEnded}
         />
       ),
     );
@@ -23,12 +35,24 @@ class PlayerContainer extends Component {
     );
   }
 
+  _onSelectSong(songKey: string) {
+    this.setState({
+      selectedSongKey: songKey,
+    });
+  }
+
+  _onSongEnded() {
+    this.setState({
+      selectedSongKey: null,
+    });
+  }
+
   getSongs() {
     return [
       {
         title: 'The Right Pair Of Shoes',
         artist: 'Marylin Monroe',
-        duration: 180,
+        duration: 10,
       },
       {
         title: 'Promise Everything, Deliver Nothing',
